@@ -1,0 +1,111 @@
+//
+//  TeacherDetailViewController.swift
+//  PianoEdu
+//
+//  Created by waklin on 15/4/28.
+//  Copyright (c) 2015年 waklin. All rights reserved.
+//
+
+import UIKit
+
+class TeacherDetailViewController: UITableViewController {
+    
+    var teacherDetail : TeacherDetail!
+    var teacherDetailMap = [String : String]()
+    var teacherDetailSort : [String] = ["姓名","性别","学历","教师级别","专业","电话","提取率", "工作单位", "毕业院校"]
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        teacherDetailMap[teacherDetailSort[0]] = teacherDetail.name
+        teacherDetailMap[teacherDetailSort[1]] = teacherDetail.sex
+        teacherDetailMap[teacherDetailSort[2]] = teacherDetail.degree
+        teacherDetailMap[teacherDetailSort[3]] = teacherDetail.level
+        teacherDetailMap[teacherDetailSort[4]] = teacherDetail.major
+        teacherDetailMap[teacherDetailSort[5]] = teacherDetail.phone
+        teacherDetailMap[teacherDetailSort[6]] = teacherDetail.proportion
+        teacherDetailMap[teacherDetailSort[7]] = teacherDetail.company
+        teacherDetailMap[teacherDetailSort[8]] = teacherDetail.graduate
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Potentially incomplete method implementation.
+        // Return the number of sections.
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete method implementation.
+        // Return the number of rows in the section.
+        return teacherDetailSort.count
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("teacherDetail", forIndexPath: indexPath) as! UITableViewCell
+
+        // Configure the cell...
+        let key = teacherDetailSort[indexPath.row]
+        cell.textLabel?.text = "\(key): \(teacherDetailMap[key]!)"
+
+        return cell
+    }
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return NO if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return NO if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

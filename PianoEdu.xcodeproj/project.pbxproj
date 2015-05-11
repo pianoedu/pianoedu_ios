@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		212BD1841AD0D23600C13F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BD1831AD0D23600C13F77 /* AppDelegate.swift */; };
+		212BD1861AD0D23600C13F77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BD1851AD0D23600C13F77 /* ViewController.swift */; };
+		212BD1891AD0D23600C13F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212BD1871AD0D23600C13F77 /* Main.storyboard */; };
+		212BD18B1AD0D23600C13F77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212BD18A1AD0D23600C13F77 /* Images.xcassets */; };
+		212BD18E1AD0D23600C13F77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212BD18C1AD0D23600C13F77 /* LaunchScreen.xib */; };
+		212BD19A1AD0D23600C13F77 /* PianoEduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BD1991AD0D23600C13F77 /* PianoEduTests.swift */; };
+		212BD1A41AD0D84800C13F77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BD1A31AD0D84800C13F77 /* LoginViewController.swift */; };
+		2147C16D1AEFC20C00ACF061 /* TeacherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147C16C1AEFC20C00ACF061 /* TeacherDetailViewController.swift */; };
+		214869B31AE91A1A005A9FB2 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214869B21AE91A1A005A9FB2 /* Module.swift */; };
+		214869B81AE91E91005A9FB2 /* NavigateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214869B71AE91E91005A9FB2 /* NavigateCollectionViewCell.swift */; };
+		21503F861AE558A100A2E60A /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21503F851AE558A100A2E60A /* MyCollectionViewCell.xib */; };
+		2161CE861AE7D47A00A71741 /* TeacherViewControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161CE851AE7D47A00A71741 /* TeacherViewControllerEx.swift */; };
+		216A805E1AFB964F006E9EEE /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A805D1AFB964F006E9EEE /* StudentViewController.swift */; };
+		2175589E1AD16B87009BC19A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217558951AD16B0B009BC19A /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2175589F1AD16B87009BC19A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217558951AD16B0B009BC19A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21A1DD631ADE8D7B0096383A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1DD621ADE8D7B0096383A /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		212BD1941AD0D23600C13F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212BD1761AD0D23600C13F77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212BD17D1AD0D23600C13F77;
+			remoteInfo = PianoEdu;
+		};
+		217558941AD16B0B009BC19A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		217558961AD16B0B009BC19A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		217558981AD16B0B009BC19A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		2175589A1AD16B0B009BC19A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		217558A01AD16B87009BC19A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		217558A21AD16B88009BC19A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2175589F1AD16B87009BC19A /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		212BD17E1AD0D23600C13F77 /* PianoEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		212BD1821AD0D23600C13F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212BD1831AD0D23600C13F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		212BD1851AD0D23600C13F77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		212BD1881AD0D23600C13F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		212BD18A1AD0D23600C13F77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		212BD18D1AD0D23600C13F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		212BD1931AD0D23600C13F77 /* PianoEduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoEduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		212BD1981AD0D23600C13F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212BD1991AD0D23600C13F77 /* PianoEduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoEduTests.swift; sourceTree = "<group>"; };
+		212BD1A31AD0D84800C13F77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2147C16C1AEFC20C00ACF061 /* TeacherDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetailViewController.swift; sourceTree = "<group>"; };
+		214869B21AE91A1A005A9FB2 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		214869B71AE91E91005A9FB2 /* NavigateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigateCollectionViewCell.swift; sourceTree = "<group>"; };
+		21503F851AE558A100A2E60A /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		2161CE851AE7D47A00A71741 /* TeacherViewControllerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherViewControllerEx.swift; sourceTree = "<group>"; };
+		216A805D1AFB964F006E9EEE /* StudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		21A1DD621ADE8D7B0096383A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		212BD17B1AD0D23600C13F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2175589E1AD16B87009BC19A /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212BD1901AD0D23600C13F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		212BD1751AD0D23600C13F77 = {
+			isa = PBXGroup;
+			children = (
+				2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */,
+				212BD1801AD0D23600C13F77 /* PianoEdu */,
+				212BD1961AD0D23600C13F77 /* PianoEduTests */,
+				212BD17F1AD0D23600C13F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		212BD17F1AD0D23600C13F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				212BD17E1AD0D23600C13F77 /* PianoEdu.app */,
+				212BD1931AD0D23600C13F77 /* PianoEduTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		212BD1801AD0D23600C13F77 /* PianoEdu */ = {
+			isa = PBXGroup;
+			children = (
+				217F5A021AF8FA8B00D16E20 /* xib */,
+				2147C1711AEFC21700ACF061 /* Teacher */,
+				216A80591AFB960F006E9EEE /* Student */,
+				212BD1851AD0D23600C13F77 /* ViewController.swift */,
+				21A1DD621ADE8D7B0096383A /* HomeViewController.swift */,
+				212BD1A31AD0D84800C13F77 /* LoginViewController.swift */,
+				212BD1871AD0D23600C13F77 /* Main.storyboard */,
+				214869B21AE91A1A005A9FB2 /* Module.swift */,
+				212BD18A1AD0D23600C13F77 /* Images.xcassets */,
+				212BD1811AD0D23600C13F77 /* Supporting Files */,
+			);
+			path = PianoEdu;
+			sourceTree = "<group>";
+		};
+		212BD1811AD0D23600C13F77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				212BD18C1AD0D23600C13F77 /* LaunchScreen.xib */,
+				212BD1831AD0D23600C13F77 /* AppDelegate.swift */,
+				212BD1821AD0D23600C13F77 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		212BD1961AD0D23600C13F77 /* PianoEduTests */ = {
+			isa = PBXGroup;
+			children = (
+				212BD1991AD0D23600C13F77 /* PianoEduTests.swift */,
+				212BD1971AD0D23600C13F77 /* Supporting Files */,
+			);
+			path = PianoEduTests;
+			sourceTree = "<group>";
+		};
+		212BD1971AD0D23600C13F77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				212BD1981AD0D23600C13F77 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2147C1711AEFC21700ACF061 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				2161CE851AE7D47A00A71741 /* TeacherViewControllerEx.swift */,
+				2147C16C1AEFC20C00ACF061 /* TeacherDetailViewController.swift */,
+			);
+			name = Teacher;
+			sourceTree = "<group>";
+		};
+		216A80591AFB960F006E9EEE /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				216A805D1AFB964F006E9EEE /* StudentViewController.swift */,
+			);
+			name = Student;
+			sourceTree = "<group>";
+		};
+		2175588E1AD16B0B009BC19A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				217558951AD16B0B009BC19A /* Alamofire.framework */,
+				217558971AD16B0B009BC19A /* Alamofire.framework */,
+				217558991AD16B0B009BC19A /* Alamofire iOS Tests.xctest */,
+				2175589B1AD16B0B009BC19A /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		217F5A021AF8FA8B00D16E20 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				214869B71AE91E91005A9FB2 /* NavigateCollectionViewCell.swift */,
+				21503F851AE558A100A2E60A /* MyCollectionViewCell.xib */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		212BD17D1AD0D23600C13F77 /* PianoEdu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212BD19D1AD0D23600C13F77 /* Build configuration list for PBXNativeTarget "PianoEdu" */;
+			buildPhases = (
+				212BD17A1AD0D23600C13F77 /* Sources */,
+				212BD17B1AD0D23600C13F77 /* Frameworks */,
+				212BD17C1AD0D23600C13F77 /* Resources */,
+				217558A21AD16B88009BC19A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				217558A11AD16B87009BC19A /* PBXTargetDependency */,
+			);
+			name = PianoEdu;
+			productName = PianoEdu;
+			productReference = 212BD17E1AD0D23600C13F77 /* PianoEdu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		212BD1921AD0D23600C13F77 /* PianoEduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212BD1A01AD0D23600C13F77 /* Build configuration list for PBXNativeTarget "PianoEduTests" */;
+			buildPhases = (
+				212BD18F1AD0D23600C13F77 /* Sources */,
+				212BD1901AD0D23600C13F77 /* Frameworks */,
+				212BD1911AD0D23600C13F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				212BD1951AD0D23600C13F77 /* PBXTargetDependency */,
+			);
+			name = PianoEduTests;
+			productName = PianoEduTests;
+			productReference = 212BD1931AD0D23600C13F77 /* PianoEduTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		212BD1761AD0D23600C13F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = waklin;
+				TargetAttributes = {
+					212BD17D1AD0D23600C13F77 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = PRLABRD83M;
+					};
+					212BD1921AD0D23600C13F77 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 212BD17D1AD0D23600C13F77;
+					};
+				};
+			};
+			buildConfigurationList = 212BD1791AD0D23600C13F77 /* Build configuration list for PBXProject "PianoEdu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 212BD1751AD0D23600C13F77;
+			productRefGroup = 212BD17F1AD0D23600C13F77 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2175588E1AD16B0B009BC19A /* Products */;
+					ProjectRef = 2175588D1AD16B0B009BC19A /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				212BD17D1AD0D23600C13F77 /* PianoEdu */,
+				212BD1921AD0D23600C13F77 /* PianoEduTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		217558951AD16B0B009BC19A /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 217558941AD16B0B009BC19A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		217558971AD16B0B009BC19A /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 217558961AD16B0B009BC19A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		217558991AD16B0B009BC19A /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 217558981AD16B0B009BC19A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2175589B1AD16B0B009BC19A /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 2175589A1AD16B0B009BC19A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		212BD17C1AD0D23600C13F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212BD1891AD0D23600C13F77 /* Main.storyboard in Resources */,
+				212BD18E1AD0D23600C13F77 /* LaunchScreen.xib in Resources */,
+				21503F861AE558A100A2E60A /* MyCollectionViewCell.xib in Resources */,
+				212BD18B1AD0D23600C13F77 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212BD1911AD0D23600C13F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		212BD17A1AD0D23600C13F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212BD1A41AD0D84800C13F77 /* LoginViewController.swift in Sources */,
+				2161CE861AE7D47A00A71741 /* TeacherViewControllerEx.swift in Sources */,
+				212BD1861AD0D23600C13F77 /* ViewController.swift in Sources */,
+				212BD1841AD0D23600C13F77 /* AppDelegate.swift in Sources */,
+				214869B31AE91A1A005A9FB2 /* Module.swift in Sources */,
+				21A1DD631ADE8D7B0096383A /* HomeViewController.swift in Sources */,
+				216A805E1AFB964F006E9EEE /* StudentViewController.swift in Sources */,
+				2147C16D1AEFC20C00ACF061 /* TeacherDetailViewController.swift in Sources */,
+				214869B81AE91E91005A9FB2 /* NavigateCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212BD18F1AD0D23600C13F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212BD19A1AD0D23600C13F77 /* PianoEduTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		212BD1951AD0D23600C13F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212BD17D1AD0D23600C13F77 /* PianoEdu */;
+			targetProxy = 212BD1941AD0D23600C13F77 /* PBXContainerItemProxy */;
+		};
+		217558A11AD16B87009BC19A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 217558A01AD16B87009BC19A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		212BD1871AD0D23600C13F77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212BD1881AD0D23600C13F77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		212BD18C1AD0D23600C13F77 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212BD18D1AD0D23600C13F77 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		212BD19B1AD0D23600C13F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		212BD19C1AD0D23600C13F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		212BD19E1AD0D23600C13F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = PianoEdu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		212BD19F1AD0D23600C13F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = PianoEdu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		212BD1A11AD0D23600C13F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PianoEduTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoEdu.app/PianoEdu";
+			};
+			name = Debug;
+		};
+		212BD1A21AD0D23600C13F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PianoEduTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoEdu.app/PianoEdu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		212BD1791AD0D23600C13F77 /* Build configuration list for PBXProject "PianoEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212BD19B1AD0D23600C13F77 /* Debug */,
+				212BD19C1AD0D23600C13F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212BD19D1AD0D23600C13F77 /* Build configuration list for PBXNativeTarget "PianoEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212BD19E1AD0D23600C13F77 /* Debug */,
+				212BD19F1AD0D23600C13F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212BD1A01AD0D23600C13F77 /* Build configuration list for PBXNativeTarget "PianoEduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212BD1A11AD0D23600C13F77 /* Debug */,
+				212BD1A21AD0D23600C13F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 212BD1761AD0D23600C13F77 /* Project object */;
+}
